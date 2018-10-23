@@ -6,11 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <title>Productos Fondant</title>
 </head>
 
 <body>
-    <h1>Hola Mundo</h1>
+    <header id="header">
+        <nav id="nav-bar">
+            <div id="logo">
+                <img src="assets/logop.png" alt="logo" id="header-img">
+                <p id="titulo"><b>Fondant Chile</b></p>
+            </div>
+            <div id="links">
+                <p class="nav-link"><a href="#proceso">Proceso</a></p>
+                <p class="nav-link"><a href="#productos">Productos</a></p>
+                <p class="nav-link"><a href="#contacto">Contacto</a></p>
+            </div>
+        </nav>
+
+    </header>
+    <div class="container">
+
+        <form action="https://www.freecodecamp.com/email-submit" target="_blank" id="form">
+            <p>Ingresa tu email para mas informacion:</p>
+            <div id="label">
+                <label for="email">Email</label>
+            </div>
+            <div id="inputs">
+                <input type="email" id="email" name="email" name placeholder="Ingresa tu email" required>
+            </div>
+            <input type="submit" id="boton" value="Enviar">
+        </form>
+
+        <div class="tarjetas" id="proceso">
+            <h2>Proceso</h2>
+            <div class="tarjeta">
+                <i class="fas fa-birthday-cake  fa-5x"></i>
+                <p>
+                    Fondant es, una pasta parecida a la plastilina pero comestible, empleada como recubrimiento de ciertas preparaciones como bollos, pasteles, magdalenas, etc. En la mayoría de los casos el fondant es una decoración repostera.
+                </p>
+            </div>
+            <div class="tarjeta">
+                <i class="fas fa-clipboard-list  fa-5x"></i>
+                <p>
+                    Para la preparación del fondant, se utiliza agua, gelatina, glicerina, glucosa, mantequilla, azúcar impalpable y esencia o saborizante. Existen tres maneras de preparar el fondant de acuerdo a la necesidad: fondant líquido, fondant elástico y el fondant
+                    extendido o frío.
+                </p>
+            </div>
+            <div class="tarjeta">
+                <i class="fas fa-clipboard-check fa-5x"></i>
+                <p>
+                    Envianos tus diseños, motivos, y el tipo de producto que desees. Nuestro equipo creativo hara la magia para crear tus deseos. Agenda una preparacion, enviandonos tus datos de contacto al mail.
+                </p>
+            </div>
+
+        </div>
+
+        <div id="video">
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/r5ICHscBWOw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+
+
+        <div class="diseños" id="productos">
+            <h2>Productos</h2>
+            <div class="tarjetaH">
+                <div class="cardH">
+                    <img class="imagenes" src="assets/Dbz.png" alt="">
+                    <p class="chtitulo">Torta de Dragon Ball Z</p>
+                </div>
+                <div class="cardH">
+                    <img class="imagenes" src="assets/TLOZ.png" alt="">
+                    <p class="chtitulo">Torta de The Legend of Zelda</p>
+                </div>
+                <div class="cardH">
+                    <img class="imagenes" src="assets/Mbros.png" alt="">
+                    <p class="chtitulo">Muffins de Mario Bross</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="contacto">
+
+        <div class="lista">
+            <h3>Fondant Chile</h3>
+            <ul>
+                <li>Nuestros Pateleros</li>
+                <li>Elige tu diseño</li>
+                <li>Galeria de imagenes</li>
+                <li>Precios</li>
+            </ul>
+        </div>
+
+        <div class="redes sociales">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-twitter-square fa-2x"></i>
+            <i class="fab fa-pinterest-square fa-2x"></i>
+
+
+        </div>
+    </footer>
 </body>
 
 </html>
