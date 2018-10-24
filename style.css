@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Charmonman);
-html,
-body {
+* {
     margin: 0;
+}
+
+body {
     background-color: #f1fff1;
     color: #6a0000;
-    display: flex;
-    flex-direction: column;
 }
 
 #header {
@@ -14,67 +14,95 @@ body {
     position: fixed;
 }
 
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Configuracion Logo */
+
 #logo {
-    display: inline-block;
-    min-width: 242px;
-    margin: 10px;
+    min-width: 220px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #logo #header-img {
-    margin: 2px;
+    display: block;
+    max-width: 5vh;
+    height: auto;
 }
 
 #logo #titulo {
     font-family: Charmonman, Arial;
     font-size: 22px;
-    display: inline;
-    position: relative;
-    bottom: 20px;
+    margin-left: 5px;
 }
+
+
+/*  Fin Configuracion Logo */
 
 #links {
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 45%;
-    position: relative;
-    bottom: 20px;
-    left: 15%;
-    border: 2px solid black;
-}
-
-#links .nav-link {
-    display: inline-block;
-    margin: 0 5%;
-    border: 2px solid black;
 }
 
 a {
     text-decoration: none;
+    font-weight: bold;
+}
+
+a:link,
+a:visited,
+a:hover {
+    color: #6a0000;
+}
+
+.relleno {
+    height: 93px;
+    background-color: transparent;
 }
 
 .container {
-    padding-top: 120px;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
     width: 80%;
     margin: 0 auto;
 }
 
+
+/* formulario */
+
 #form {
     text-align: center;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 #form #label {
     display: inline-block;
-    border: 2px solid black;
 }
 
 #form #inputs {
     display: inline-block;
-    border: 2px solid black;
 }
 
 #boton {
     border-radius: 5px;
+}
+
+
+/* fin formulario */
+
+.tarjetas {
+    width: 80%;
+    ;
 }
 
 .tarjetas h2 {
@@ -98,30 +126,32 @@ a {
     margin: 5px;
 }
 
-#video {
-    text-align: center;
+.video {
+    margin: 50px 0px;
+    display: flex;
+}
+
+.diseños {
+    width: 80%;
 }
 
 .diseños h2 {
     text-align: center;
+    margin: 20px;
 }
 
 .tarjetaH {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    border: 2px solid black;
+    align-items: center;
 }
 
 .cardH {
-    flex-basis: 30%;
-    flex-shrink: 0;
     margin-bottom: 20px;
-    border: 2px solid black;
 }
 
 .imagenes {
-    max-width: 25vw;
+    max-width: 20vw;
     height: auto;
 }
 
@@ -133,6 +163,7 @@ footer {
     background-color: #be3737;
     margin: 0;
     margin-top: 20px;
+    padding: 20px 0;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -140,23 +171,38 @@ footer {
     align-items: center;
 }
 
-@media (max-width:790px) {
+@media (max-width:415px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
     #links {
-        left: 10%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    .container {
+        padding-top: 10px;
+    }
+    iframe {
+        width: 350px;
+        height: 197px;
+    }
+    .tarjetaH {
+        flex-direction: column;
+    }
+    .imagenes {
+        max-width: 30vh;
+        ;
+    }
+    .relleno {
+        height: 170px;
     }
 }
 
-@media (max-width:375px) {
-    #logo {
-        display: block;
-    }
-    #links {
-        display: block;
-        bottom: 5px;
-        left: 10px;
-    }
-    #links .nav-link {
-        display: block;
-        margin: 5px 0px;
+@media (max-width:395px) {
+    iframe {
+        width: 280px;
+        height: 158px;
     }
 }
